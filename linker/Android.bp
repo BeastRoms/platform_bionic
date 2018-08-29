@@ -198,6 +198,11 @@ cc_defaults {
         debuggable: {
             cppflags: ["-DUSE_LD_CONFIG_FILE"],
         },
+        beast: {
+            target_process_sdk_version_override: {
+                cppflags: ["-DSDK_VERSION_OVERRIDES=\"%s\""],
+            },
+        },
     },
 
     cppflags: ["-Wold-style-cast"],
